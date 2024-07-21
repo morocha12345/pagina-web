@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas de Química</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://img.freepik.com/vector-gratis/equipo-laboratorio-tubos-vidrio-matraz-otros-equipos-medicion-laboratorio-quimico-o-medicina-estilo-dibujos-animados-disenador-grafico-concepto-educacion-ciencias-biologicas-ilustracion-vectorial_1150-60471.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .container p {
+            margin: 0;
+        }
+        .container input, .container button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .container button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pregunta de Química</h1>
+        <p id="question"></p>
+        <input type="text" id="answer" placeholder="Tu respuesta">
+        <button id="submit">Responder</button>
+        <div>
+            <p id="message"></p>
+            <p id="attempts"></p>
+            <p id="timer"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
